@@ -3,10 +3,11 @@ import gql from 'graphql-tag';
 import { Query, Mutation } from 'react-apollo';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as actions from './actions/pizzaActions';
 
-import PizzaOrderForm from './components/containers/PizzaOrderForm';
+import * as actions from './actions/pizzaActions';
 import {getPizzaPrice, getPizzas} from './selectors/pizzaSelectors';
+import PizzaOrderForm from './components/containers/PizzaOrderForm';
+
 import './App.css';
 
 class App extends React.Component {
